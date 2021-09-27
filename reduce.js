@@ -30,9 +30,9 @@ const indexByKey = users.reduce((arrIndex, user) => {
     }
 }, []);
 
-console.log(indexByKey)
-// para posicionarme 
-console.log(indexByKey['iuwqyiueyue298937']);
+// console.log(indexByKey)
+// // para posicionarme 
+// console.log(indexByKey['iuwqyiueyue298937']);
 
 // convertir a array plano
 
@@ -44,3 +44,35 @@ const plano = anidado.reduce((acum, el) => {
 }, []);
 
 // console.log(plano)
+
+
+const uu = [
+    [ 'nombre', 'apellido', 'email', 'fono', 'empresa' ],
+    [ 'rene', 'montaño', 'r.arturo.m89@gmail.com', 123456, 'dvp' ],
+    [ 'carlos', 'garcia', 'r.arturo.m89@gmail.com', 8787987, 'dvp' ],
+    [ 'jose', 'lskjldj', 'r.arturo.m89@gmail.com', 990890, 'dvp' ],
+    [ 'maria', 'qqqq', 'r.arturo.m89@gmail.com', 56465, 'dvp' ],
+    [ 'pedro', 'lololo', 'r.arturo.m89@gmail.com', 6257163, 'dvp' ],
+    [ 'juan', 'eeeee', 'r.arturo.m89@gmail.com', 876868, 'dvp' ],
+    [ 'miguel', 'uywtutye', 'r.arturo.m89@gmail.com', 98798273, 'dvp' ],
+    [ 'alex', 'kjhkjs', 'r.arturo.m89@gmail.com', 8767868, 'dvp' ],
+    [ 'michel', 'uytwyte', 'r.arturo.m89@gmail.com', 677657, 'dvp' ],
+    [ 'manuela', 'iuwyeiue', 'r.arturo.m89@gmail.com', 64546545, 'dvp' ],
+    [ 'martin', 'lkjskldj', 'r.arturo.m89@gmail.com', 89798789, 'dvp' ],
+    [ 'arturo', 'mnbnbmn', 'r.arturo.m89@gmail.com', 7646576, 'dvp' ],
+    [ 'sofia', 'iuweyiu', 'r.arturo.m89@gmail.com', 5435435, 'dvp' ],
+    [],
+    [],
+    [],
+    [],
+    []
+  ];
+
+  const cleanF = uu.reduce((acc, el) => {
+    if(el.length > 0){
+        acc.push(el);
+    }
+    return acc
+  }, []);
+
+  console.log(cleanF);
